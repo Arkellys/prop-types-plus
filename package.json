@@ -2,7 +2,6 @@
   "name": "prop-types-plus",
   "author": "Arkellys",
   "version": "1.0.0",
-  "description": "Additional prop-type validators for React.",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --out-dir lib",
@@ -42,5 +41,10 @@
     "chai": "locked to v4 because v5+ only supports ESM"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arkellys/prop-types-plus.git"
+  },
+  "homepage": "https://github.com/Arkellys/prop-types-plus#readme",
   "packageManager": "yarn@4.1.0"
 }
