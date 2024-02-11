@@ -1,0 +1,44 @@
+{
+  "name": "prop-types-plus",
+  "author": "Arkellys",
+  "version": "1.0.0",
+  "description": "Additional prop-type validators for React.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib",
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "react",
+    "propTypes",
+    "prop-types",
+    "prop",
+    "types",
+    "validators"
+  ],
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/register": "^7.23.7",
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "chai": "^4.4.1",
+    "eslint": "^8.56.0",
+    "eslint-config-arklint": "^1.2.3",
+    "eslint-plugin-mocha": "^10.2.0",
+    "mocha": "^10.3.0",
+    "prop-types": "^15.8.1"
+  },
+  "devDependenciesComments": {
+    "chai": "locked to v4 because v5+ only supports ESM"
+  },
+  "license": "MIT",
+  "packageManager": "yarn@4.1.0"
+}
