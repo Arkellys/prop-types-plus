@@ -1,6 +1,6 @@
 # prop-types-plus
 
-Another library of custom PropType validators. It is greetly inspired by [`airbnb/prop-types`](https://github.com/airbnb/prop-types), which probably already offers the same custom types and more. I just wanted to create my own. 🙃
+Another library of custom PropType validators. It is greatly inspired by [`airbnb/prop-types`](https://github.com/airbnb/prop-types), which probably already offers the same custom types and more. I just wanted to create my own. 🙃
 
 ---
 
