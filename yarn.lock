@@ -3301,6 +3301,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"husky@npm:^9.0.10":
+  version: 9.0.10
+  resolution: "husky@npm:9.0.10"
+  bin:
+    husky: bin.mjs
+  checksum: 10c0/585d95fec151d2e3fba1a8d97c1290dee40b83eb2b8850afae0805e183b3b3ec45bfeef97b2d0c4ae16f1c1bf19788b9129627d9ba02d924c874632207e33b93
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -4492,6 +4501,7 @@ __metadata:
     eslint: "npm:^8.56.0"
     eslint-config-arklint: "npm:^1.2.3"
     eslint-plugin-mocha: "npm:^10.2.0"
+    husky: "npm:^9.0.10"
     mocha: "npm:^10.3.0"
     prop-types: "npm:^15.8.1"
   peerDependencies:
