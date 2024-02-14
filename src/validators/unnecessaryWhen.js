@@ -1,4 +1,4 @@
-import { isFunction, isNil, NotRequirableError, wrapValidator } from "../helpers";
+import { isFunction, isNil, NotRequirableError, wrapValidator } from "../helpers/index.js";
 
 
 /**

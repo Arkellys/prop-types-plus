@@ -1,8 +1,8 @@
-import { bool, number, shape, string } from "prop-types";
 import { expect } from "chai";
+import PropTypes from "prop-types";
 
-import { arrayOfShape } from "../src";
-import validate, { PROP_NAME } from "./_validate";
+import { arrayOfShape } from "../src/index.js";
+import validate, { PROP_NAME } from "./_validate.js";
 
 
 describe("arrayOfShape", () => {
@@ -35,7 +35,7 @@ describe("arrayOfShape", () => {
 	});
 
 	it("fails when the prop is longer than the expected shape", () => {
-		const validator = arrayOfShape([string]);
+		const validator = arrayOfShape([PropTypes.string]);
 
 		const result = validate(validator, { [PROP_NAME]: ["str", "str"] });
 
@@ -43,7 +43,11 @@ describe("arrayOfShape", () => {
 	});
 
 	it("fails when the prop doesn't have the expected shape", () => {
-		const validator = arrayOfShape([string, number.isRequired, shape({ bool })]);
+		const validator = arrayOfShape([
+			PropTypes.string,
+			PropTypes.number.isRequired,
+			PropTypes.shape({ bool: PropTypes.bool })
+		]);
 
 		const resultOne = validate(validator, { [PROP_NAME]: [] });
 		const resultTwo = validate(validator, { [PROP_NAME]: ["str", 8015, "str"] });
@@ -72,7 +76,11 @@ describe("arrayOfShape", () => {
 	});
 
 	it("passes when the prop has the expected shape", () => {
-		const validator = arrayOfShape([string, number.isRequired, shape({ bool })]);
+		const validator = arrayOfShape([
+			PropTypes.string,
+			PropTypes.number.isRequired,
+			PropTypes.shape({ bool: PropTypes.bool })
+		]);
 
 		const resultOne = validate(validator, { [PROP_NAME]: [undefined, 8015] });
 		const resultTwo = validate(validator, { [PROP_NAME]: ["str", 8015, { bool: true }] });

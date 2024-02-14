@@ -1,4 +1,4 @@
-import secret from "prop-types/lib/ReactPropTypesSecret";
+import secret from "prop-types/lib/ReactPropTypesSecret.js";
 
 
 export const PROP_NAME = "tester";

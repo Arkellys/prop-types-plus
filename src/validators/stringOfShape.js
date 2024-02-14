@@ -1,6 +1,6 @@
-import { string } from "prop-types";
+import PropTypes from "prop-types";
 
-import { isNil, RequiredError, wrapValidator } from "../helpers";
+import { isNil, RequiredError, wrapValidator } from "../helpers/index.js";
 
 
 /**
@@ -22,7 +22,7 @@ export default function stringOfShape(regex) {
 
 		if (isNil(propValue)) return null;
 
-		const stringTypeError = string(props, propName, componentName, ...rest);
+		const stringTypeError = PropTypes.string(props, propName, componentName, ...rest);
 		if (stringTypeError) return stringTypeError;
 
 		if (!regex.test(propValue)) {

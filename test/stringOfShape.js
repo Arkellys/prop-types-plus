@@ -1,7 +1,7 @@
 import { expect } from "chai";
 
-import { stringOfShape } from "../src";
-import validate, { PROP_NAME } from "./_validate";
+import { stringOfShape } from "../src/index.js";
+import validate, { PROP_NAME } from "./_validate.js";
 
 
 describe("stringOfShape", () => {

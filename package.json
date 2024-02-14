@@ -2,7 +2,8 @@
   "name": "prop-types-plus",
   "author": "Arkellys",
   "version": "1.0.0",
-  "main": "lib/index.js",
+  "exports": "./lib/index.js",
+  "type": "module",
   "scripts": {
     "build": "rm -rf lib && swc src --out-dir lib --strip-leading-paths",
     "lint": "eslint .",
@@ -20,6 +21,9 @@
     "types",
     "validators"
   ],
+  "engines": {
+    "node": ">=16"
+  },
   "peerDependencies": {
     "react": ">=16"
   },
@@ -27,7 +31,7 @@
     "@swc-node/register": "^1.8.0",
     "@swc/cli": "^0.3.9",
     "@swc/core": "^1.4.1",
-    "chai": "^4.4.1",
+    "chai": "^5.1.0",
     "eslint": "^8.56.0",
     "eslint-config-arklint": "^1.2.3",
     "eslint-plugin-mocha": "^10.2.0",
@@ -35,9 +39,6 @@
     "mocha": "^10.3.0",
     "prop-types": "^15.8.1",
     "typescript": "^5.3.3"
-  },
-  "devDependenciesComments": {
-    "chai": "locked to v4 because v5+ only supports ESM"
   },
   "license": "MIT",
   "repository": {

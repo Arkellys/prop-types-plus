@@ -1,6 +1,6 @@
-import { array } from "prop-types";
+import PropTypes from "prop-types";
 
-import { arrayToObject, isNil, RequiredError, wrapValidator } from "../helpers";
+import { arrayToObject, isNil, RequiredError, wrapValidator } from "../helpers/index.js";
 
 
 /**
@@ -22,7 +22,7 @@ export default function arrayOfShape(shape) {
 
 		if (isNil(propValue)) return null;
 
-		const arrayTypeError = array(props, propName, componentName, ...rest);
+		const arrayTypeError = PropTypes.array(props, propName, componentName, ...rest);
 		if (arrayTypeError) return arrayTypeError;
 
 		if (propValue.length > shape.length) {
