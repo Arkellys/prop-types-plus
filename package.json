@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rm -rf lib && babel src --out-dir lib",
+    "build": "rm -rf lib && swc src --out-dir lib --strip-leading-paths",
     "lint": "eslint .",
     "test": "mocha",
     "prepare": "husky"
@@ -24,18 +24,17 @@
     "react": ">=16"
   },
   "devDependencies": {
-    "@babel/cli": "^7.23.9",
-    "@babel/core": "^7.23.9",
-    "@babel/preset-env": "^7.23.9",
-    "@babel/register": "^7.23.7",
-    "babel-plugin-add-module-exports": "^1.0.4",
+    "@swc-node/register": "^1.8.0",
+    "@swc/cli": "^0.3.9",
+    "@swc/core": "^1.4.1",
     "chai": "^4.4.1",
     "eslint": "^8.56.0",
     "eslint-config-arklint": "^1.2.3",
     "eslint-plugin-mocha": "^10.2.0",
-    "husky": "^9.0.10",
+    "husky": "^9.0.11",
     "mocha": "^10.3.0",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "typescript": "^5.3.3"
   },
   "devDependenciesComments": {
     "chai": "locked to v4 because v5+ only supports ESM"

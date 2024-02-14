@@ -1,3 +1,3 @@
 module.exports = {
-	require: "@babel/register"
+	require: "@swc-node/register"
 }
