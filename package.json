@@ -1,7 +1,7 @@
 {
   "name": "prop-types-plus",
   "author": "Arkellys",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "type": "module",
   "scripts": {
@@ -28,7 +28,6 @@
     "react": ">=16"
   },
   "devDependencies": {
-    "@swc-node/register": "^1.8.0",
     "@swc/cli": "^0.3.9",
     "@swc/core": "^1.4.1",
     "chai": "^5.1.0",
@@ -37,8 +36,7 @@
     "eslint-plugin-mocha": "^10.2.0",
     "husky": "^9.0.11",
     "mocha": "^10.3.0",
-    "prop-types": "^15.8.1",
-    "typescript": "^5.3.3"
+    "prop-types": "^15.8.1"
   },
   "license": "MIT",
   "repository": {
