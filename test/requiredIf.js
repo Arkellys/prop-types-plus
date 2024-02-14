@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { string } from "prop-types";
 
-import { requiredIf } from "../src/validators";
+import { requiredIf } from "../src";
 import validate, { PROP_NAME } from "./_validate";
 
 

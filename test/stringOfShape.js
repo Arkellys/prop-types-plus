@@ -1,6 +1,6 @@
 import { expect } from "chai";
 
-import { stringOfShape } from "../src/validators";
+import { stringOfShape } from "../src";
 import validate, { PROP_NAME } from "./_validate";
 
 

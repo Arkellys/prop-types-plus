@@ -1,7 +1,7 @@
 import { bool, number, shape, string } from "prop-types";
 import { expect } from "chai";
 
-import { arrayOfShape } from "../src/validators";
+import { arrayOfShape } from "../src";
 import validate, { PROP_NAME } from "./_validate";
 
 
