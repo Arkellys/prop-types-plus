@@ -9,10 +9,10 @@ import { isFunction, isNil, NotRequirableError, wrapValidator } from "../helpers
 
 /**
  * Provides a validator to test whether a prop is unnecessary.
- * @param {Function} type - Prop type validator
+ * @param {any} type - Prop type validator
  * @param {UnnecessaryWhenCondition} condition - Function checking whether the prop is unnecessary
  * @param {string} [errorMessage] - Custom error message to return when the prop is unnecessary
- * @returns {Function} Validator
+ * @returns {import("prop-types").Validator<any>} Validator
  */
 
 export default function unnecessaryWhen(type, condition, errorMessage) {

@@ -9,10 +9,10 @@ import { isFunction, isNil, NotRequirableError, wrapValidator } from "../helpers
 
 /**
  * Provides a validator to test whether a prop is required.
- * @param {Function} type - Prop type validator
+ * @param {any} type - Prop type validator
  * @param {RequiredIfCondition} condition - Function checking whether the prop is required
  * @param {string} [errorMessage] - Custom error message to return when the prop is required
- * @returns {Function} Validator
+ * @returns {import("prop-types").Validator<any>} Validator
  */
 
 export default function requiredIf(type, condition, errorMessage) {

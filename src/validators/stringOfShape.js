@@ -4,14 +4,9 @@ import { isNil, RequiredError, wrapValidator } from "../helpers/index.js";
 
 
 /**
- * @typedef {object} Requirable
- * @property {unknown} isRequired - Whether the validator is required
- */
-
-/**
  * Provides a validator to test the shape of a string.
  * @param {RegExp} regex - Regex to test the string shape
- * @returns {Function & Requirable} Validator
+ * @returns {import("prop-types").Requireable<any>} Validator
  */
 
 export default function stringOfShape(regex) {

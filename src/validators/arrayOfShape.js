@@ -4,14 +4,9 @@ import { arrayToObject, isNil, RequiredError, wrapValidator } from "../helpers/i
 
 
 /**
- * @typedef {object} Requirable
- * @property {unknown} isRequired - Whether the validator is required
- */
-
-/**
  * Provides a validator to test the shape of an array.
  * @param {Array} shape - Required array shape
- * @returns {Function & Requirable} Validator
+ * @returns {import("prop-types").Requireable<any>} Validator
  */
 
 export default function arrayOfShape(shape) {
