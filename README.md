@@ -68,7 +68,7 @@ const propTypes = {
 
 ### `stringOfShape`
 
-Tests whether a string match the given regex.
+Tests whether a string matches the given regex.
 
 #### Signature
 
