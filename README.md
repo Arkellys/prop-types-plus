@@ -108,7 +108,7 @@ import { string } from "prop-type";
 import { unnecessaryWhen } from "prop-types-plus";
 
 const propTypes = {
-  foo: requiredIf(
+  foo: unnecessaryWhen(
     string,
     (props) => props.bar
     "The prop `foo` is unnecessary when there is `bar`."
